@@ -5,7 +5,9 @@ use rand::Rng;
 fn main() {  
     println!("Hello, world!");
 
-    guess_number();
+    // guess_number();
+
+    variable();
 }
 
 // guess number game
@@ -42,4 +44,25 @@ fn guess_number() {
             }
         }
     }
+}
+
+fn variable() {
+    // variable declaration and initialization
+    let mut x = 5;
+    x += 1;
+    println!("variable x: {}", x);
+
+    // constant declaration and initialization
+    const THREAD_POOL_SIZE: u32 = 4;
+    println!("const THREAD_POOL_SIZE: {}", THREAD_POOL_SIZE);
+    
+    // shadowing
+    let var = "hello world";
+    println!("var x: {}", var);
+    {
+        let var = "hello";
+        println!("var x: {}", var);
+    }
+    let var = var.len();
+    println!("var x: {}", var)
 }
