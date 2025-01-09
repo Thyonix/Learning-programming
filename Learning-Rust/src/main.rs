@@ -11,7 +11,7 @@ fn main() {
     
     // data_type();
 
-    
+    println!("sum:{}", function_sum(10, 5));
 }
 
 // guess number game
@@ -91,4 +91,13 @@ fn data_type() {
     let arr2: [u32; 5] = [1, 2, 3, 4, 5];
     let arr3 = [3;5];
     let arr_var = arr1[0];
+}
+
+// function declaration and call
+fn function_sum(x: u32, y: u32) -> u32 {
+    let z = {
+        let temp = x;
+        x + y + temp
+    };
+    z
 }
