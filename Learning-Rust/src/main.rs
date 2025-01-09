@@ -7,7 +7,11 @@ fn main() {
 
     // guess_number();
 
-    variable();
+    // variable();
+    
+    // data_type();
+
+    
 }
 
 // guess number game
@@ -46,9 +50,11 @@ fn guess_number() {
     }
 }
 
+
+// variable declaration and initialization
 fn variable() {
     // variable declaration and initialization
-    let mut x = 5;
+    let mut x = 5; 
     x += 1;
     println!("variable x: {}", x);
 
@@ -65,4 +71,24 @@ fn variable() {
     }
     let var = var.len();
     println!("var x: {}", var)
+}
+
+// data type examples
+fn data_type() {
+    // scalar
+    let x: u32 = 5;
+    let y: f64 = 3.14;
+    let z: char = '哈';
+    let b: bool = true;
+    // tuple
+    let tuple: (i32, f64, char) = (5, 3.14, '哈');
+    let (a, b, c) = tuple;
+    let a = tuple.0;
+    let b = tuple.1;
+    let c = tuple.2;
+    // array
+    let arr1 = [1, 2, 3, 4, 5];
+    let arr2: [u32; 5] = [1, 2, 3, 4, 5];
+    let arr3 = [3;5];
+    let arr_var = arr1[0];
 }
